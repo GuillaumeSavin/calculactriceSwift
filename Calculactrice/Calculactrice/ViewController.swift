@@ -42,15 +42,21 @@ class ViewController: UIViewController
         switch sender.currentTitle!
         {
             case "+":
-
-                    calcule(operation: +)
-                
+                calculeOperationBinaire(operation: +)
             case "-":
-                calcule(operation: {(x, y) in return y - x})
+                calculeOperationBinaire() {$1 - $0}
             case "*":
-                calcule(operation: *)
+                calculeOperationBinaire(operation: *)
             case "/":
-                break
+                calculeOperationBinaire() {$1 / $0}
+            case "√":
+                calculeOperationUnaire() {sqrt($0)}
+            case "²":
+                calculeOperationUnaire() {$0 * $0}
+            case "³":
+                calculeOperationUnaire() {$0 * $0 * $0}
+            case "(-)":
+                calculeOperationUnaire() {-$0}
             default:
                 break
             
@@ -58,7 +64,15 @@ class ViewController: UIViewController
         
     }
     
-    func calcule(operation: (Double, Double) -> Double)
+    func calculeOperationUnaire(operation: (Double) -> Double)
+    {
+        if pileDeNombres.count >= 1
+        {
+            valeurAffichée = operation(pileDeNombres.removeLast())
+            enter(self)
+        }
+    }
+    func calculeOperationBinaire(operation: (Double, Double) -> Double)
     {
         if pileDeNombres.count >= 2
         {
