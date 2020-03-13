@@ -39,6 +39,11 @@ class Cerveau
             pileDOp.append(op)
         }
         
+        func evalue() -> Double?
+        {
+            return nil
+        }
+        
     }
     
     
