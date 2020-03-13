@@ -46,9 +46,9 @@ class ViewController: UIViewController
                     calcule(operation: +)
                 
             case "-":
-                break
+                calcule(operation: {(x, y) in return y - x})
             case "*":
-                break
+                calcule(operation: *)
             case "/":
                 break
             default:
