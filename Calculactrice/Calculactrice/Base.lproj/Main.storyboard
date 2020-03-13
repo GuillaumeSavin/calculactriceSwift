@@ -54,7 +54,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gaK-Ke-Cyg"/>
+                                    <action selector="applyOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wkb-dG-KHl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQM-7C-vAm">
@@ -63,7 +63,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="*"/>
                                 <connections>
-                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgR-H4-NhR"/>
+                                    <action selector="applyOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOr-zk-D0n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEY-xu-tKn">
@@ -72,7 +72,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="-"/>
                                 <connections>
-                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GD-43-wGt"/>
+                                    <action selector="applyOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2J-Up-TKS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Y8-WI-0KL">
@@ -162,7 +162,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="/"/>
                                 <connections>
-                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wxj-ow-JaA"/>
+                                    <action selector="applyOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dvl-xw-Bw0"/>
                                 </connections>
                             </button>
                         </subviews>

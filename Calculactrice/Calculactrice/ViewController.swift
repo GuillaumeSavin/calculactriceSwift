@@ -37,6 +37,36 @@ class ViewController: UIViewController
         onEstAuMilieuDeLaSaisie = false
     }
     
+    @IBAction func applyOperation(_ sender: UIButton)
+    {
+        switch sender.currentTitle!
+        {
+            case "+":
+
+                    calcule(operation: +)
+                
+            case "-":
+                break
+            case "*":
+                break
+            case "/":
+                break
+            default:
+                break
+            
+        }
+        
+    }
+    
+    func calcule(operation: (Double, Double) -> Double)
+    {
+        if pileDeNombres.count >= 2
+        {
+            valeurAffichée = operation(pileDeNombres.removeLast(), pileDeNombres.removeLast())
+            enter(self)
+            
+        }
+    }
     var valeurAffichée : Double
     {
         get
