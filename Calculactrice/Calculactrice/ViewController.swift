@@ -17,6 +17,7 @@ class ViewController: UIViewController
     @IBAction func addNumber(_ sender: UIButton)
     {
         let chiffre = sender.currentTitle
+        let compteVirgule = 0
         print("le chiffre est \(chiffre!)")
         if(onEstAuMilieuDeLaSaisie)
         {
@@ -27,6 +28,18 @@ class ViewController: UIViewController
         {
             ecran.text! = chiffre!
             onEstAuMilieuDeLaSaisie = true
+        }
+        if chiffre == "."
+        {
+            compteVirgule = compteVirgule + 1
+        }
+        else
+        {
+            
+        }
+        if compteVirgule > 2
+        {
+            ecran.text! += ""
         }
         
     }
